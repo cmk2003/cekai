@@ -149,7 +149,7 @@ SESSION_REDIS = {
     'host': '121.41.19.82',
     'port': 6379,
     'db': 5,
-    'password': 'chen1888',
+    'password': 'xxx',
     'prefix': 'session',
     'socket_timeout': 1,
     'retry_on_timeout': False
@@ -158,10 +158,10 @@ SESSION_REDIS = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://:chen1888@121.41.19.82:6379/1',  # 使用 Redis 的连接字符串
+        'LOCATION': 'redis://:xxx@121.41.19.82:6379/1',  # 使用 Redis 的连接字符串
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-            'PASSWORD': 'chen1888',
+            'PASSWORD': 'xxx',
         },
         'TIMEOUT': 60 * 60 * 24,  # 24 小时
     }
